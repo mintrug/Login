@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Login</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>/WEB-INF/Login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>loginController</servlet-name>
+  	<servlet-class>Controller.LoginController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>loginController</servlet-name>
+  	<url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>welcomeController</servlet-name>
+  	<servlet-class>Controller.WelcomeController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>welcomeController</servlet-name>
+  	<url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>registerController</servlet-name>
+  	<servlet-class>Controller.RegisterController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>registerController</servlet-name>
+  	<url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>addController</servlet-name>
+  	<servlet-class>Controller.AddController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>addController</servlet-name>
+  	<url-pattern>/Add</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>editController</servlet-name>
+  	<servlet-class>Controller.EditController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>editController</servlet-name>
+  	<url-pattern>/Edit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>deleteController</servlet-name>
+  	<servlet-class>Controller.DeleteController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>deleteController</servlet-name>
+  	<url-pattern>/Delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>searchController</servlet-name>
+  	<servlet-class>Controller.SearchController</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>searchController</servlet-name>
+  	<url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+</web-app>
